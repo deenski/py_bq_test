@@ -31,3 +31,13 @@ I've created a very simple example to follow a long. First a couple of things to
 3. `pip install -r requirements.txt`
 
 4. `python __main__.py <dataset_name>.<table_name>`
+
+## 🐋🐋 Docker Love 🐋🐋
+
+Build the container: `docker build -t py_bq_test .`
+Run the container with this directory mounted to /bq_test: `docker run --rm -it -v $(pwd):/bq_test py_bq_test` - This won't work to run your query, no application creds supplied.
+Assuming you have followed the directions and have a service account in this directory called creds.json, supply the env var neeeded to use the client library like so: 
+
+`docker run --rm -it -v $(pwd):/bq_test -e GOOGLE_APPLICATION_CREDENTIALS=/bq_test/creds.json py_bq_test`
+
+Also, look in the Makefile, it's not that scary. I promise.
