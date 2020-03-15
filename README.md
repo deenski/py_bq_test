@@ -2,9 +2,11 @@
 
 I've created a very simple example to follow a long. First a couple of things to know:
 
-1. I am not a python developer so this may not be organized well, but I am trying to learn and appreciate feedback. My job is to provide engineering support to data scientists. I've followed SOME portions of a successful workflow I helped develop for our team using Docker and Makefile targets to simplify the process and abstract away the "hard stuff" about docker, and replace the god awful Pipenv package management experience. Kenneth Reitz rocks, Pipenv is trash. You can't win them all.
+1. I am not a python developer so this may not be organized well, but I am trying to learn and appreciate feedback. My job is to provide engineering support to data scientists. It's a new world for me, my background is in sysadmin, containerization, hosting web apps, and a lot of k8s. I've followed SOME portions of a successful workflow I helped develop for our team using Docker and Makefile targets to simplify the process and abstract away the "hard stuff" about docker our data scientists don't have experience with. 
 
-2. This readme assumes you're sane and working in linux/unix. If you need Windows support, get at me and I'll help. But I don't want to cross that bridge until it's necessary.
+2. This readme assumes you're sane and can handle package management. Kenneth Reitz is awesome, Pipenv is garbage. Use requirements.txt
+
+3. This readme assumes you're sane and working in linux/unix. If you need Windows support, get at me and I'll help. But I don't want to cross that bridge until it's necessary.
 
 ## Using this workflow
 
